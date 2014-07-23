@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = numeric()) {
                 i <<- NULL
         }
         get <- function() x
-        setinverse <- function(Solve) i <<- mean
+        setinverse <- function(Solve) i <<- Solve
         getinverse <- function() i
         list(set = set, get = get,
              setinverse = setinverse,
